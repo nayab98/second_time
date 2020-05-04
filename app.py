@@ -27,9 +27,9 @@ def predict():
   prediction = model.predict(final_features)
   output = round(prediction[0], 2)
   if (output==1):
-      return render_template('index1.html', prediction_text=' THE PERSON WILL LEAVE THE COMPANY ')
+      return render_template('index.html', prediction_text=' THE PERSON WILL LEAVE THE COMPANY ')
   else:
-      return render_template('index1.html', prediction_text=' THE PERSON WILL STAY')
+      return render_template('index.html', prediction_text=' THE PERSON WILL STAY')
 
 if __name__=='__main__':
   app.run(debug=True)
